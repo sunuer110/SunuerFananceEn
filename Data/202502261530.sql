@@ -1,5 +1,5 @@
 
-/****** Object:  Table [dbo].[Accounting]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  Table [dbo].[Accounting]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -28,7 +28,7 @@ CREATE TABLE [dbo].[Accounting](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AccountingCategory]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  Table [dbo].[AccountingCategory]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -53,7 +53,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AccountingCategoryLog]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  Table [dbo].[AccountingCategoryLog]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -82,7 +82,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AccountingLog]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  Table [dbo].[AccountingLog]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -115,7 +115,7 @@ CREATE TABLE [dbo].[AccountingLog](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Admin]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  Table [dbo].[Admin]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -140,7 +140,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AdminPower]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  Table [dbo].[AdminPower]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -156,7 +156,7 @@ CREATE TABLE [dbo].[AdminPower](
 	[PowerTitle] [nvarchar](50) NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[AdminRoles]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  Table [dbo].[AdminRoles]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -332,45 +332,19 @@ INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserI
 GO
 INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (17, 1, CAST(N'2024-11-21T15:56:28.290' AS DateTime), 0, NULL, 0, 16, N'Article Categories')
 GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (19, 1, CAST(N'2024-11-21T16:20:57.590' AS DateTime), 0, NULL, 0, 16, N'Add Article Category')
+INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (18, 1, CAST(N'2024-11-21T16:20:57.590' AS DateTime), 0, NULL, 0, 16, N'Add Article Category')
 GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (20, 0, CAST(N'2024-11-22T15:09:06.470' AS DateTime), 0, NULL, 0, 16, N'Edit Article Category')
+INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (19, 0, CAST(N'2024-11-22T15:09:06.470' AS DateTime), 0, NULL, 0, 16, N'Edit Article Category')
 GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (21, 0, CAST(N'2024-11-22T15:09:09.760' AS DateTime), 0, NULL, 0, 16, N'Delete Article Category')
+INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (20, 0, CAST(N'2024-11-22T15:09:09.760' AS DateTime), 0, NULL, 0, 16, N'Delete Article Category')
 GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (22, 0, CAST(N'2024-11-22T15:09:20.227' AS DateTime), 0, NULL, 0, 16, N'Add Article')
+INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (21, 0, CAST(N'2024-11-22T15:09:20.227' AS DateTime), 0, NULL, 0, 16, N'Add Article')
 GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (23, 0, CAST(N'2024-11-22T15:09:24.637' AS DateTime), 0, NULL, 0, 16, N'Edit Article')
+INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (22, 0, CAST(N'2024-11-22T15:09:24.637' AS DateTime), 0, NULL, 0, 16, N'Edit Article')
 GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (24, 0, CAST(N'2024-11-22T15:09:27.413' AS DateTime), 0, NULL, 0, 16, N'Delete Article')
+INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (23, 0, CAST(N'2024-11-22T15:09:27.413' AS DateTime), 0, NULL, 0, 16, N'Delete Article')
 GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (25, 0, CAST(N'2025-02-15T16:39:24.917' AS DateTime), 0, NULL, 0, 200, N'Import')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (26, 0, CAST(N'2025-02-15T16:39:32.400' AS DateTime), 0, NULL, 0, 200, N'Export')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (27, 0, CAST(N'2025-01-16T09:53:01.783' AS DateTime), 0, NULL, 0, 0, N'Accounting Management')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (28, 0, CAST(N'2025-01-16T09:53:19.973' AS DateTime), 0, NULL, 0, 200, N'Accounting Category')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (29, 0, CAST(N'2025-01-16T09:53:36.340' AS DateTime), 0, NULL, 0, 200, N'Add Accounting Category')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (30, 0, CAST(N'2025-01-16T09:53:53.063' AS DateTime), 0, NULL, 0, 200, N'Edit Accounting Category')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (31, 0, CAST(N'2025-01-16T09:54:18.933' AS DateTime), 0, NULL, 0, 200, N'Delete Accounting Category')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (32, 0, CAST(N'2025-01-16T09:55:05.340' AS DateTime), 0, NULL, 0, 200, N'Accounting ')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (33, 0, CAST(N'2025-01-16T09:55:23.897' AS DateTime), 0, NULL, 0, 200, N'Add Accounting ')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (34, 0, CAST(N'2025-01-16T09:55:37.393' AS DateTime), 0, NULL, 0, 200, N'Edt Accounting ')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (35, 0, CAST(N'2025-01-16T09:55:49.837' AS DateTime), 0, NULL, 0, 200, N'Delete Accounting ')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (36, 0, CAST(N'2025-01-16T09:56:10.930' AS DateTime), 0, NULL, 0, 200, N'Accounting Review')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (37, 0, CAST(N'2025-01-16T09:56:29.853' AS DateTime), 0, NULL, 0, 200, N'View Accounting Details')
-GO
-INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (38, 0, CAST(N'2025-01-16T09:56:44.410' AS DateTime), 0, NULL, 0, 200, N'View All Users'' Data')
+INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (24, 0, CAST(N'2025-02-15T16:39:24.917' AS DateTime), 0, NULL, 0, 0, N'System Settings')
 GO
 INSERT [dbo].[AdminPower] ([PowerID], [CreateUserID], [CreateDate], [UpdateUserID], [UpdateDate], [Del], [ParentID], [PowerTitle]) VALUES (212, 0, CAST(N'2025-02-15T16:39:24.917' AS DateTime), 0, NULL, 0, 200, N'Import')
 GO
@@ -512,7 +486,7 @@ ALTER TABLE [dbo].[AdminRoles] ADD  DEFAULT ((0)) FOR [UpdateUserID]
 GO
 ALTER TABLE [dbo].[AdminRoles] ADD  DEFAULT ((0)) FOR [Del]
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_Add]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_Add]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -540,7 +514,7 @@ begin
     return @fanhui
 end
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_AddImport]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_AddImport]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -569,7 +543,7 @@ begin
     return @fanhui
 end
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_Audit]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_Audit]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -596,7 +570,7 @@ begin
     return @fanhui
 end
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_ChuzhangGetCount30]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_ChuzhangGetCount30]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -609,7 +583,7 @@ select sum(AccountingPrice) as Number ,convert(varchar(11),AccountingTime,111) a
 Accounting  where  Del=0  and @StarTime<=AccountingTime  and @EndTime>=AccountingTime  and AccountingType=1
 group by convert(varchar(11),AccountingTime,111)order by convert(varchar(11),AccountingTime,111)
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_Delete]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_Delete]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -631,7 +605,7 @@ begin
     return @fanhui
 end
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_Get]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_Get]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -704,7 +678,7 @@ EXEC sp_executesql @s, N'@AccountingTitle nvarchar(50),@CategoryID int,@Accounti
 @AccountingTitle,@CategoryID,@AccountingType,@AuditStatus,@Star,@End,@CreateUserID,@AuditorUserName,@StartRecord,@EndRecord
 
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_GetCount]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_GetCount]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -769,7 +743,7 @@ EXEC sp_executesql @s, N'@AccountingTitle nvarchar(50),@CategoryID int,@Accounti
 @AccountingTitle,@CategoryID,@AccountingType,@AuditStatus,@Star,@End,@CreateUserID,@AuditorUserName
  
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_GetCount30]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_GetCount30]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -781,7 +755,7 @@ CREATE Procedure [dbo].[Accounting_GetCount30]
 as
 select count(AccountingID) as Number ,convert(varchar(11),CreateDate,111) as Datas from Accounting  where  Del=0  and @StarTime<=CreateDate  and @EndTime>=CreateDate group by convert(varchar(11),CreateDate,111)order by convert(varchar(11),CreateDate,111)
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_GetLast]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_GetLast]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -801,7 +775,7 @@ select CategoryID from Accounting where AccountingID=@AccountingID
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_GetModel]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_GetModel]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -816,7 +790,7 @@ begin
     where n.Del=0 and n.AccountingID = @AccountingID
 end
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_GetNext]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_GetNext]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -836,7 +810,7 @@ and AccountingID>@AccountingID and del=0 and AccountingTime<getdate() order by A
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_GetPrice]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_GetPrice]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -908,7 +882,7 @@ end
 		@AccountingTitle,@CategoryID,@AccountingType,@AuditStatus,@Star,@End,@CreateUserID,@AuditorUserName
  
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_GetTop]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_GetTop]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -944,7 +918,7 @@ EXEC sp_executesql @s, N'@AccountingTitle nvarchar(50),@CategoryID int,@StartRec
 
 
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_GetTopCount]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_GetTopCount]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -972,7 +946,7 @@ print @s;
 EXEC sp_executesql @s, N'@AccountingTitle nvarchar(50),@CategoryID int', @AccountingTitle,@CategoryID
  
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_HetongGetCount30]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_HetongGetCount30]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -985,7 +959,7 @@ select sum(AccountingPrice) as Number ,convert(varchar(11),AccountingTime,111) a
 Accounting  where  Del=0  and @StarTime<=AccountingTime  and @EndTime>=AccountingTime  and AccountingType=2
 group by convert(varchar(11),AccountingTime,111)order by convert(varchar(11),AccountingTime,111)
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_RuzhangGetCount30]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_RuzhangGetCount30]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -999,7 +973,7 @@ select sum(AccountingPrice) as Number ,convert(varchar(11),AccountingTime,111) a
 Accounting  where  Del=0  and @StarTime<=AccountingTime  and @EndTime>=AccountingTime  and AccountingType=0 
 group by convert(varchar(11),AccountingTime,111)order by convert(varchar(11),AccountingTime,111)
 GO
-/****** Object:  StoredProcedure [dbo].[Accounting_Update]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[Accounting_Update]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1033,7 +1007,7 @@ begin
     return @fanhui
 end
 GO
-/****** Object:  StoredProcedure [dbo].[AccountingCategory_Add]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[AccountingCategory_Add]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1082,7 +1056,7 @@ select @ParentIDFirst=ParentIDFirst,@Depths=Depths,@ParentIDS=ParentIDS from [Ac
     end    
  return @fanhui
 GO
-/****** Object:  StoredProcedure [dbo].[AccountingCategory_Delete]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[AccountingCategory_Delete]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1102,7 +1076,7 @@ as
 
     return @fanhui
 GO
-/****** Object:  StoredProcedure [dbo].[AccountingCategory_Get]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[AccountingCategory_Get]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1114,7 +1088,7 @@ begin
     select * from AccountingCategory where Del=0 and ParentID=@ParentID order by Sorts desc 
 end
 GO
-/****** Object:  StoredProcedure [dbo].[AccountingCategory_GetAll]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[AccountingCategory_GetAll]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1126,7 +1100,7 @@ begin
     select * from AccountingCategory where Del=0
 end
 GO
-/****** Object:  StoredProcedure [dbo].[AccountingCategory_GetModel]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[AccountingCategory_GetModel]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1139,7 +1113,7 @@ begin
     where CategoryID = @CategoryID
 end
 GO
-/****** Object:  StoredProcedure [dbo].[AccountingCategory_GetNumber]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[AccountingCategory_GetNumber]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1154,7 +1128,7 @@ begin
 	 where a.Del=0 and (n.CategoryID=a.CategoryID or  charindex(','+CAST(n.CategoryID AS NVARCHAR(50))+',', ','+b.ParentIDs+',') > 0)) as Number from AccountingCategory as n where n.Del=0 and n.ParentID=@ParentID
 end
 GO
-/****** Object:  StoredProcedure [dbo].[AccountingCategory_GetParentIDAll]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[AccountingCategory_GetParentIDAll]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1166,7 +1140,7 @@ begin
     select * from AccountingCategory where Del=0 and  charindex(','+CAST(@ParentID AS NVARCHAR)+',',','+ParentIDs+',')>0
 end
 GO
-/****** Object:  StoredProcedure [dbo].[AccountingCategory_Update]    Script Date: 2025/2/26 15:30:19 ******/
+/****** Object:  StoredProcedure [dbo].[AccountingCategory_Update]    Script Date: 2025/3/14 14:15:13 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
